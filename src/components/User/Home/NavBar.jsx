@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 const NavBar = () => {
     return (
-        <div className='h-12 flex justify-between items-center px-20 py-14'>
+        <div className='h-12 hidden md:flex justify-between items-center px-10 py-12'>
             <p className='logo text-4xl'>NOSTRA</p>
 
             <ul className="flex justify-between gap-10 items-center">
