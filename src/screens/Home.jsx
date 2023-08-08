@@ -12,8 +12,8 @@ const Home = () => {
             <CTA />
             <NavBar />
             <Banner />
-            <Categories />
             <CustomerExperience />
+            <Categories />
         </>
     )
 }
