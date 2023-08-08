@@ -1,23 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Lora:wght@400;500;600;700&display=swap');
 
 .p-400{
-    font-family: "Montserrat";
+    font-family: "Open Sans";
     font-weight: 400;
 }
 
 .p-500{
-    font-family: "Montserrat";
+    font-family: "Open Sans";
     font-weight: 500;
 }
 
 .p-600{
-    font-family: "Montserrat";
+    font-family: "Open Sans";
     font-weight: 600;
 }
 
 .p-700{
-    font-family: "Montserrat";
+    font-family: "Open Sans";
     font-weight: 700;
 }
 
