@@ -55,11 +55,11 @@ const Categories = () => {
     return (
         <>
             <div className='homepage-categories-container'>
-                <h1 className='homepage-categories-container-heading p-700 text-2xl'>Categories</h1>
+                <h1 className='homepage-categories-container-heading p-700 text-xl md:text-2xl'>Categories</h1>
                 <div className='flex justify-center items-center gap-2 mt-7 flex-wrap'>
                     {
                         categories.map((categories, index) => (
-                            <div className='bg-white rounded-xl hover:drop-shadow-lg w-36 md:w-48 mb-4'>
+                            <div className='bg-white rounded-xl hover:drop-shadow-lg w-36 md:w-48 mb-4' key={index}>
                                 <img className='rounded' src={categories.image}></img>
                                 <div className='p-400 text-sm text-center mt-2 bg-white'>
                                     {categories.category}
