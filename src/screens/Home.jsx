@@ -5,6 +5,7 @@ import Banner from '../components/User/Home/Banner'
 import Categories from '../components/User/Home/Categories'
 import CustomerExperience from '../components/User/Home/CustomerExperience'
 import '../styles/user/home.css'
+import TrendingProducts from '../components/User/Home/TrendingProducts'
 
 const Home = () => {
     return (
@@ -14,6 +15,7 @@ const Home = () => {
             <Banner />
             <CustomerExperience />
             <Categories />
+            <TrendingProducts />
         </>
     )
 }
