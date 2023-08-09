@@ -6,6 +6,7 @@ import Categories from '../components/User/Home/Categories'
 import CustomerExperience from '../components/User/Home/CustomerExperience'
 import '../styles/user/home.css'
 import TrendingProducts from '../components/User/Home/TrendingProducts'
+import AllProducts from '../components/User/Home/AllProducts'
 
 const Home = () => {
     return (
@@ -16,6 +17,7 @@ const Home = () => {
             <CustomerExperience />
             <Categories />
             <TrendingProducts />
+            <AllProducts />
         </>
     )
 }
