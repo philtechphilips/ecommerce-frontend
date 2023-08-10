@@ -7,6 +7,8 @@ import CustomerExperience from '../components/User/Home/CustomerExperience'
 import '../styles/user/home.css'
 import TrendingProducts from '../components/User/Home/TrendingProducts'
 import AllProducts from '../components/User/Home/AllProducts'
+import Footer from '../components/User/Home/Footer'
+import Newsletter from '../components/User/Home/Newsletter'
 
 const Home = () => {
     return (
@@ -18,6 +20,8 @@ const Home = () => {
             <Categories />
             <TrendingProducts />
             <AllProducts />
+            <Newsletter />
+            <Footer />
         </>
     )
 }
