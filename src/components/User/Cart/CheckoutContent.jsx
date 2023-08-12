@@ -104,7 +104,9 @@ const CheckoutContent = () => {
             <h5 className='p-500 text-gray-800'>Grand Total</h5>
             <p className='text-lg text-gray-700 mt-1 p-700'>&#x20A6;1,500.00</p>
           </div>
+          <button className='bg-gray-900 p-600 p-3 w-full mt-3 rounded text-white disabled:bg-gray-200 disabled:text-gray-900 disabled:cursor-not-allowed' disabled>Continue to payment</button>
         </div>
+        
       </form>
 
     </div>
