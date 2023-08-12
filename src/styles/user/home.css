@@ -71,9 +71,25 @@
 }
 
 .homepage-categories-container{
-    padding: 60px 40px;
+    padding: 20px 40px;
     /* background-color: rgb(247, 247, 247); */
     margin-top: 60px;
+}
+
+
+.category-item{
+    width: 100%;
+    display: flex;
+    overflow-x: auto;
+}
+
+.category-item img{
+    width: 300px;
+}
+
+.homepage-categories-content-container{
+    display: flex;
+    overflow-x: scroll;
 }
 
 @media (max-width: 600px) {

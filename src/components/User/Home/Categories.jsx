@@ -1,73 +1,95 @@
 import React from 'react'
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
+import phone from '../../../assets/images/icons8-phone-100.png'
+import groceries from '../../../assets/images/icons8-groceries-96.png'
+import computer from '../../../assets/images/icons8-computer-100.png'
+import beauty from '../../../assets/images/icons8-cream-64.png'
+import television from '../../../assets/images/icons8-television-64.png'
+import fashion from '../../../assets/images/icons8-fashions-64.png'
+import accessories from '../../../assets/images/icons8-headphone-64.png'
+import refrigerators from '../../../assets/images/icons8-refrigerator-64.png'
+import watch from '../../../assets/images/icons8-watch-96.png'
+import sneakers from '../../../assets/images/icons8-sneakers-64.png'
 
 const Categories = () => {
 
+    const responsive = {
+        superLargeDesktop: {
+            // the naming can be any, depends on you.
+            breakpoint: { max: 4000, min: 3000 },
+            items: 5
+        },
+        desktop: {
+            breakpoint: { max: 3000, min: 1024 },
+            items: 8
+        },
+        tablet: {
+            breakpoint: { max: 1024, min: 464 },
+            items: 2
+        },
+        mobile: {
+            breakpoint: { max: 464, min: 0 },
+            items: 2
+        }
+    };
+
     const categories = [
         {
-            image: "https://ng.jumia.is/cms/0-1-homepage/0-0-freelinks-gray/300x240/phones-tablets_300x240.png",
+            image: phone,
             category: "Phones & Tablet"
         },
         {
-            image: "https://ng.jumia.is/cms/0-1-homepage/0-0-freelinks-gray/300x240/groceries_300x240v2.png",
+            image: groceries,
             category: "Groceries"
         },
         {
-            image: "https://ng.jumia.is/cms/0-1-homepage/0-0-freelinks-gray/300x240/generic_300x240.jpg",
+            image: computer,
             category: "Computers"
         },
         {
-            image: "https://ng.jumia.is/cms/0-6-anniversary/2023/Brand-day/30-Nivea/generic_300x240.jpg",
+            image: beauty,
             category: "Health & Beauty"
         },
         {
-            image: "https://ng.jumia.is/cms/0-1-homepage/0-0-freelinks-gray/300x240/televisions_300x240.png",
+            image: television,
             category: "Televisions"
         },
         {
-            image: "https://ng.jumia.is/cms/0-1-homepage/0-0-freelinks-gray/300x240/fash_300x240.jpg",
+            image: fashion,
             category: "Fashions"
         },
         {
-            image: "https://ng.jumia.is/cms/0-1-homepage/0-0-freelinks-gray/300x240/refrigerators_300x240.png",
+            image: refrigerators,
             category: "Refrigerators"
         },
         {
-            image: "https://ng.jumia.is/cms/0-1-homepage/0-0-freelinks-gray/300x240/earphones_300x240.png",
-            category: "Mobile Accessories"
+            image: accessories,
+            category: "Electronics"
         },
         {
-            image: "https://ng.jumia.is/cms/0-1-homepage/0-0-freelinks-gray/300x240/generator.gif",
-            category: "Generators"
+            image: sneakers,
+            category: "Sneakers"
         },
         {
-            image: "https://ng.jumia.is/cms/0-1-homepage/0-0-freelinks-gray/300x240/fashion_300x240.png",
-            category: "Men's Sneakers"
-        },
-        {
-            image: "https://ng.jumia.is/cms/0-1-homepage/0-0-freelinks-gray/300x240/watches_300x240.png",
+            image: watch,
             category: "Watches"
-        },
-        {
-            image: "https://ng.jumia.is/cms/0-1-initiatives/clearance-sale/2023/Clearance.gif",
-            category: "Clearance Sales"
         },
     ]
     return (
         <>
             <div className='homepage-categories-container'>
-                <h1 className='homepage-categories-container-heading p-700 text-xl md:text-2xl'>Categories</h1>
-                <div className='flex justify-center items-center gap-2 mt-7 flex-wrap'>
+                <h1 className='homepage-categories-container-heading p-600 text-xl md:text-2xl'>Categories</h1>
+                <Carousel responsive={responsive} keyBoardControl={true} infinite={true} removeArrowOnDeviceType={["tablet", "mobile"]} draggable={false} className='flex  gap-2 mt-7 flex-wrap'>
                     {
                         categories.map((categories, index) => (
-                            <div className='bg-white rounded-xl hover:drop-shadow-lg w-36 md:w-48 mb-4' key={index}>
-                                <img className='rounded' src={categories.image}></img>
-                                <div className='p-400 text-sm text-center mt-2 bg-white'>
-                                    {categories.category}
-                                </div>
+                            <div className='flex flex-col items-center justify-center bg-blue-100 rounded w-40 gap-2 md:w-36 mb-4 p-2' key={index}>
+                                <img className='rounded w-[90px] item-center' src={categories.image}></img>
+                                <p className='p-400 text-sm'>{categories.category}</p>
                             </div>
                         ))
                     }
-                </div>
+                </Carousel>
             </div>
         </>
     )

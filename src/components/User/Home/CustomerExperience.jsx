@@ -15,32 +15,32 @@ const CustomerExperience = () => {
                     <div className='customer-experience-body-content-icon'>
                         <i className="ri-focus-2-line"></i>
                     </div>
-                    <h5 className='p-700 text-black'>Original Products</h5>
-                    <p>We provide money back guarantee if the products are not original.</p>
-                </div>
-
-                <div className='customer-experience-body-content'>
-                    <div className='customer-experience-body-content-icon'>
-                        <i className="ri-shield-check-line"></i>
-                    </div>
-                    <h5 className='p-700 text-black'>Satisfaction Guarantee</h5>
-                    <p>We provide money back guarantee if the products are not original.</p>
+                    <h5 className='p-600 text-black'>Original Products</h5>
+                    <p className='p-400 text-sm'>We provide money back guarantee if the products are not original.</p>
                 </div>
 
                 <div className='customer-experience-body-content'>
                     <div className='customer-experience-body-content-icon'>
                         <i className="ri-add-line"></i>
                     </div>
-                    <h5 className='p-700 text-black'>Satisfaction Guarantee</h5>
-                    <p>We provide money back guarantee if the products are not original.</p>
+                    <h5 className='p-600 text-black'>Satisfaction Guarantee</h5>
+                    <p className='p-400 text-sm'>We provide money back guarantee if the products are not original.</p>
                 </div>
 
                 <div className='customer-experience-body-content'>
                     <div className='customer-experience-body-content-icon'>
-                        <i className="ri-truck-line"></i>
+                        <i className="ri-add-line"></i>
                     </div>
-                    <h5 className='p-700 text-black'>Satisfaction Guarantee</h5>
-                    <p>We provide money back guarantee if the products are not original.</p>
+                    <h5 className='p-600 text-black'>Satisfaction Guarantee</h5>
+                    <p className='p-400 text-sm'>We provide money back guarantee if the products are not original.</p>
+                </div>
+
+                <div className='customer-experience-body-content'>
+                    <div className='customer-experience-body-content-icon'>
+                        <i className="ri-add-line"></i>
+                    </div>
+                    <h5 className='p-600 text-black'>Satisfaction Guarantee</h5>
+                    <p className='p-400 text-sm'>We provide money back guarantee if the products are not original.</p>
                 </div>
             </div>
         </>
