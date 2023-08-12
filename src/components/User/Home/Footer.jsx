@@ -55,7 +55,7 @@ const Footer = () => {
 
             <div className='w-full h-[1px] bg-gray-300 mt-12'></div>
             <div className='mt-3'>
-                <p className='text-center text-gray-400'>Copyright {  } Nostra. All right reserved</p>
+                <p className='text-center text-gray-400 text-sm'>Copyright {  } Nostra. All right reserved</p>
             </div>
         </div>
     )
