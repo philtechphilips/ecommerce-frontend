@@ -4,10 +4,10 @@ import { Link } from 'react-router-dom'
 const NavBar = () => {
     return (
         <div className='h-12 hidden md:flex justify-between items-center px-10 py-12'>
-            <p className='logo text-4xl'>NOSTRA</p>
+            <Link to="/" className='logo text-4xl text-[#0C513F]'>NOSTRA</Link>
 
             <ul className="flex justify-between gap-10 items-center">
-                <li className="p-600 text-gray-800"><Link to="/#">Shop</Link></li>
+                <li className="p-600 text-gray-800"><Link to="/shop">Shop</Link></li>
                 <li className="p-600 text-gray-800"><Link to="/#">Most Wanted</Link></li>
                 <li className="p-600 text-gray-800"><Link to="/#">New Arrival</Link></li>
                 <li className="p-600 text-gray-800"><Link to="/#">Brands</Link></li>

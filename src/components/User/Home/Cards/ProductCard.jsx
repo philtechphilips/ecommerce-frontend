@@ -1,10 +1,10 @@
 import React from 'react'
 
-const ProductCard = ({ product, index }) => {
+const ProductCard = ({ product }) => {
     return (
         <>
-            <div className='bg-gray-100 rounded-xl  w-[49%] md:w-72 mb-4' key={index}>
-                <img className='rounded' src={product.image} alt={`Trending Product ${index}`} />
+            <div className='bg-gray-100 rounded-xl  w-[49%] md:w-72 mb-4'>
+                <img className='rounded' src={product.image} alt={`Trending Product Image`} />
                 <div className='mt-2 flex flex-col gap-1 justify-between bg-white p-3'>
                     <div className='flex gap-1 items-center'>
                         <i className="ri-star-fill text-amber-500 text-sm"></i>
