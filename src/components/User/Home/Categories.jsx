@@ -16,7 +16,6 @@ const Categories = () => {
 
     const responsive = {
         superLargeDesktop: {
-            // the naming can be any, depends on you.
             breakpoint: { max: 4000, min: 3000 },
             items: 5
         },
@@ -30,8 +29,26 @@ const Categories = () => {
         },
         mobile: {
             breakpoint: { max: 464, min: 0 },
-            items: 2
+            items: 2,
+            partialVisibilityGutter: 30
         }
+    };
+
+    const ButtonGroup = ({ next, previous, goToSlide, ...rest }) => {
+        const { carouselState: { currentSlide } } = rest;
+        return (
+            <div className='flex gap-0 absolute top-5 right-16'>
+                <div onClick={() => previous()} className={`${currentSlide === 0 ? 'disable' : ''} text-2xl p-1 rounded-tl rounded-bl border-r border-gray-100 bg-gray-100 text-gray-900 cursor-pointer`}>
+                    <i className="ri-arrow-drop-left-line text-2xl"></i>
+                </div>
+                <div onClick={() => next()}
+                    className='text-2xl p-1 bg-gray-100 rounded-tr rounded-br border-l text-gray-900 cursor-pointer'
+                >
+                    <i className="ri-arrow-drop-right-line text-2xl"></i>
+                </div>
+            </div>
+
+        );
     };
 
     const categories = [
@@ -78,13 +95,14 @@ const Categories = () => {
     ]
     return (
         <>
-            <div className='homepage-categories-container'>
+            <div className='homepage-categories-container relative'>
                 <h1 className='homepage-categories-container-heading p-600 text-xl md:text-2xl'>Categories</h1>
-                <Carousel responsive={responsive} keyBoardControl={true} infinite={true} removeArrowOnDeviceType={["tablet", "mobile"]} draggable={false} className='flex  gap-2 mt-7 flex-wrap'>
+                <Carousel responsive={responsive} arrows={false} customButtonGroup={<ButtonGroup />} partialVisible={true} swipeable={true} keyBoardControl={true} infinite={true} customTransition="all .1"
+                    transitionDuration={100} removeArrowOnDeviceType={["tablet", "mobile"]} draggable={true} className='mt-7 static'>
                     {
                         categories.map((categories, index) => (
-                            <div className='flex flex-col items-center justify-center bg-blue-100 rounded w-40 gap-2 md:w-36 mb-4 p-2' key={index}>
-                                <img className='rounded w-[90px] item-center' src={categories.image}></img>
+                            <div className='flex flex-col items-center justify-center bg-blue-100 rounded w-[130px] gap-2 md:w-36 mb-4 px-3 py-5' key={index}>
+                                <img className='rounded w-[70px] item-center' src={categories.image}></img>
                                 <p className='p-400 text-sm'>{categories.category}</p>
                             </div>
                         ))

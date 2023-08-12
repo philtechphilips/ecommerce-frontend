@@ -4,6 +4,8 @@ import visa from '../../../assets/images/visa.png'
 import verve from '../../../assets/images/verve.png'
 
 const Footer = () => {
+    const currentDate = new Date();
+  const year = currentDate.getFullYear();
     return (
         <div className='homepage-categories-container bg-gray-200'>
             <div className="flex flex-wrap md:flex-nowrap justify-between gap-8 md:gap-36">
@@ -55,7 +57,7 @@ const Footer = () => {
 
             <div className='w-full h-[1px] bg-gray-300 mt-12'></div>
             <div className='mt-3'>
-                <p className='text-center text-gray-400'>Copyright {  } Nostra. All right reserved</p>
+                <p className='text-center text-gray-400 text-sm'>&copy; Copyright { year } Nostra. All right reserved</p>
             </div>
         </div>
     )

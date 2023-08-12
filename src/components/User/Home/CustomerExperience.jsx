@@ -3,7 +3,7 @@ import React from 'react'
 const CustomerExperience = () => {
     return (
         <>
-            <div className='customer-experience-container'>
+            {/* <div className='customer-experience-container'>
                 <h2 className='p-700'>We provide best customer experience</h2>
                 <div className='customer-experience-container-right'>
                     <div className='line'></div>
@@ -42,7 +42,7 @@ const CustomerExperience = () => {
                     <h5 className='p-600 text-black'>Satisfaction Guarantee</h5>
                     <p className='p-400 text-sm'>We provide money back guarantee if the products are not original.</p>
                 </div>
-            </div>
+            </div> */}
         </>
 
     )
