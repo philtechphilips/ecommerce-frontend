@@ -9,10 +9,10 @@ const AllProducts = () => {
     ]
 
     return (
-        <>
+        <div className='flex flex-col items-center'>
             <div className='homepage-categories-container bg-white w-full'>
                 <div className='flex items-center justify-between'>
-                    <h1 className='homepage-categories-container-heading p-700 text-xl md:text-2xl'>All Products</h1>
+                    <h1 className='homepage-categories-container-heading p-600 text-xl md:text-2xl'>All Products</h1>
                 </div>
                 <div className='flex flex-wrap justify-start gap-1 md:gap-4 mt-7 w-full'>
                     {products.map((product, index) => (
@@ -24,16 +24,20 @@ const AllProducts = () => {
                                     <p className='p-400 text-sm'>4.8</p>
                                     <p className='text-sm'>(750)</p>
                                 </div>
-                                <div>
+                                <div className='flex flex-col gap-2'>
                                     <p className='p-400 text-sm text-gray-900'>{product.name}</p>
-                                    <p className='p-600 text-lg text-gray-800'>&#8358; 500 <sup className='text-xs p-400 text-gray-600'>&#8358;300</sup></p>
+                                    <div className='flex justify-between items-center'>
+                                        <p className='p-600 text-lg text-gray-800'>&#8358; 500 <sup className='text-xs p-400 text-gray-600'>&#8358;300</sup></p>
+                                        <button className='bg-[#6FCEAD] rounded-full px-2 py-1 md:px-3 md:py-2'><i className="ri-shopping-cart-2-line text-lg md:text-xl text-[#fff]"></i></button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     ))}
                 </div>
             </div>
-        </>
+            <button className='p-500 md:mt-[-50px] mb-24  border w-fit border-[#6FCEAD] rounded px-5 py-2 hover:bg-[#6FCEAD] hover:text-white text-[#6FCEAD]'>View more</button>
+        </div>
     )
 }
 
