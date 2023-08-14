@@ -5,9 +5,9 @@ import verve from '../../../assets/images/verve.png'
 
 const Footer = () => {
     const currentDate = new Date();
-  const year = currentDate.getFullYear();
+    const year = currentDate.getFullYear();
     return (
-        <div className='homepage-categories-container bg-gray-200'>
+        <div className='homepage-categories-container bg-gray-200 py-16'>
             <div className="flex flex-wrap md:flex-nowrap justify-between gap-8 md:gap-36">
                 <div className='flex flex-wrap md:flex-nowrap flex-col gap-4 w-full md:w-1/3 pr-0 md:pr-24'>
                     <h1 className='logo text-3xl'>NOSTRA</h1>
@@ -57,7 +57,7 @@ const Footer = () => {
 
             <div className='w-full h-[1px] bg-gray-300 mt-12'></div>
             <div className='mt-3'>
-                <p className='text-center text-gray-400 text-sm'>&copy; Copyright { year } Nostra. All right reserved</p>
+                <p className='text-center text-gray-400 text-sm'>&copy; Copyright {year} Nostra. All right reserved</p>
             </div>
         </div>
     )

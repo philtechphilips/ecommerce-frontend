@@ -15,8 +15,8 @@ const NavBar = () => {
         };
     }, []);
     return (
-        <div className={`h-8  bg-white flex justify-between items-center px-10 py-8 drop-shadow-sm mb-5 ${isFixed ? 'fixed w-full top-0 z-[1000]' : ''}`}>
-            <Link to="/" className='logo text-4xl text-[#0C513F]'>NOSTRA</Link>
+        <div className={`h-8  bg-white flex justify-between items-center px-5 md:px-10 py-8 drop-shadow-sm mb-5 ${isFixed ? 'fixed w-full top-0 z-[1000]' : ''}`}>
+            <Link to="/" className='logo text-2xl md:text-4xl text-gray-900'>NOSTRA</Link>
 
             <ul className="hidden md:flex justify-between gap-10 items-center">
                 <li className="p-600 text-gray-800"><Link to="/shop">Shop</Link></li>
